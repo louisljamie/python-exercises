@@ -44,7 +44,7 @@ company = ['Google', 'Amazon', 'Facebook']
 pay = [400, 380, 350]
 hours = [6, 4, 10]
 
-for (a, b, c,) in itertools.zip_longest (company, pay, hours):
+for (a, b, c,) in it.zip_longest (company, pay, hours):
       print(a, b * c)
 
     
@@ -140,7 +140,7 @@ password = len(password) >= 5
 
 # the username must be no more than 20 characters
 
-username = len(username) <= 20
+username = len(username) git <= 20
 
 # the password must not be the same as the username
 
