@@ -52,6 +52,15 @@ for (a, b, c,) in it.zip_longest (company, pay, hours):
 
 
 #def pay_per_hour(company, hours):
+#    if company == 'Google':
+#        return 400 * hours
+#    elif company == 'Amazon':
+#        return 380 * hours
+#    elif company == 'Facebook':
+#        return 350 * hours
+#    else:
+#        return 'Not a valid company'
+
     
 #[google, amazon, facebook] = ["Google", "Amazon", "Facebook"]
 #[company,rate_per_hour, hours] = ['Google', 6), pay_per_hour(Amazon, 4), pay_per_hour(Facebook, 10)]
@@ -88,16 +97,11 @@ for (a, b, c,) in it.zip_longest (company, pay, hours):
 #    "google": 6,
  #   "amazon": 4,
  #   "facebook": 10
-
-
 #rate_per_hour = rate_per_hour.values()
-
 #print(rate_per_hour)
 
 #companies = rate_per_hour.keys()[0]
-
-#income = rate_per_hour.values()[0] 
-
+#income = rate_per_hour.values()[0]
 #print (income + rate_per_hour.values)
 
 
@@ -115,7 +119,10 @@ else:
     print("You cannot enroll in this class")
 
 
-
+class_is_not_full = True
+schedule_does_not_conflict = True
+enroll = class_is_not_full and schedule_does_not_conflict
+enroll
 
 
 # A product offer can be applied only if people buys more than 2 items, and the offer has not expired. Premium members do not need to buy a specific amount of products.
@@ -128,8 +135,13 @@ def can_apply_offer(items, is_premium_member, offer_is_expired):
         return True
     else:
         return False
-    
-    
+
+
+
+premium_member = True
+more_than_two_items = False
+coupon_not_expired = True
+coupon_not_expired and (more_than_two_items or premium_member)
     
 # username = 'codeup'
 # password = 'notastrongpassword'
@@ -153,3 +165,11 @@ username = username.strip()
 password = password.strip()
 
 
+my_username = 'King'
+my_password = 'Ryanisthebest'
+Check_1 = len(my_password) > 4
+Check_1
+Check_2 = len(my_username) <= 20
+Check_2
+Check_3 = my_username != my_password
+Check_3

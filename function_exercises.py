@@ -127,3 +127,10 @@ def cumulative_sum(x):
 # col_index('A') returns 1
 # col_index('B') returns 2
 # col_index('AA') returns 27
+
+def col_index(x):
+    return sum((ord(c) - 64) * 26**i for i, c in enumerate(x[::-1]))
+
+
+
+

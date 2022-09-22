@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../numpy-pandas-visualization-exercises/.idea/numpy-pandas-visualization-exercises.iml" filepath="$PROJECT_DIR$/../numpy-pandas-visualization-exercises/.idea/numpy-pandas-visualization-exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/python-exercises.iml" filepath="$PROJECT_DIR$/.idea/python-exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../vscode/.idea/vscode.iml" filepath="$PROJECT_DIR$/../vscode/.idea/vscode.iml" />
     </modules>
   </component>
 </project>

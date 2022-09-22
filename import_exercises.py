@@ -16,8 +16,15 @@ calculate_tip()
 # Read about and use the itertools module from the python standard library to help you solve the following problems:
     # How many different ways can you combine the letters from "abc" with the numbers 1, 2, and 3?
     # How many different combinations are there of 2 letters from "abcd"?
-    # How many different permutations are there of 2 letters from "abcd"?   
-    
+    # How many different permutations are there of 2 letters from "abcd"?   cd
+
+
+list(itertools.product('abc', [1,2,3]))
+
+len(list(itertools.combinations('abcd', 2)))
+
+len(list(itertools.permutations('abcd', 2)))
+
 
 
 
