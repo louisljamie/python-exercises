@@ -6,6 +6,7 @@ from webbrowser import get
 #user_input = input('Enter 2: ')
 
 
+
 def is_two(x):
 
     if x == 2 or x == '2':

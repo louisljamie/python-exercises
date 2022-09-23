@@ -1,20 +1,141 @@
 # How many students are there?
+students = len(students)
+print(students)
+
 # How many students prefer light coffee? For each type of coffee roast?
+
+light_coffee = 0
+for student in students:
+    if student['coffee_preference'] == 'light':
+        light_coffee += 1
+print(light_coffee)
+
+
 # How many types of each pet are there?
+
+pet_types = []
+for student in students:
+    pet_types.append(student['pet'])
+print(max(set(pet_types), key=pet_types.count))
+
+
 # How many grades does each student have? Do they all have the same number of grades?
+
+grades = []
+for student in students:
+    grades.append(len(student['grades']))
+print(max(set(grades), key=grades.count))
+
 # What is each student's grade average?
+
+for student in students:
+    print(sum(student['grades']) / len(student['grades']))
+
+
 # How many pets does each student have?
+
+pets = []
+for student in students:
+    pets.append(len(student['pet']))
+print(max(set(pets), key=pets.count))
+
+
 # How many students are in web development? data science?
+
+web_development = 0
+data_science = 0
+for student in students:
+
+    if student['course'] == 'web development':
+        web_development += 1
+    elif student['course'] == 'data science':
+        data_science += 1
+print(web_development)
+print(data_science)
+
+
 # What is the average number of pets for students in web development?
+
+pets = []
+for student in students:
+    if student['course'] == 'web development':
+        pets.append(len(student['pet']))
+print(sum(pets) / len(pets))
+
+
 # What is the average pet age for students in data science?
+
+pet_ages = []
+for student in students:
+    if student['course'] == 'data science':
+        pet_ages.append(student['pet_age'])
+print(sum(pet_ages) / len(pet_ages))
+
+
 # What is most frequent coffee preference for data science students?
+
+coffee_preferences = []
+for student in students:
+    if student['course'] == 'data science':
+        coffee_preferences.append(student['coffee_preference'])
+print(max(set(coffee_preferences), key=coffee_preferences.count))
+
+
 # What is the least frequent coffee preference for web development students?
+
+coffee_preferences = []
+for student in students:
+    if student['course'] == 'web development':
+        coffee_preferences.append(student['coffee_preference'])
+print(min(set(coffee_preferences), key=coffee_preferences.count))
+
+
 # What is the average grade for students with at least 2 pets?
+
+grades = []
+for student in students:
+    if len(student['pet']) >= 2:
+        grades.append(sum(student['grades']) / len(student['grades']))
+print(sum(grades) / len(grades))
+
+
 # How many students have 3 pets?
+
+students_with_3_pets = 0
+for student in students:
+    if len(student['pet']) == 3:
+        students_with_3_pets += 1
+print(students_with_3_pets)
+
+
 # What is the average grade for students with 0 pets?
+
+grades = []
+for student in students:
+    if len(student['pet']) == 0:
+        grades.append(sum(student['grades']) / len(student['grades']))
+print(sum(grades) / len(grades))
+
+
 # What is the average grade for web development students? data science students?
+
+web_development_grades = []
+data_science_grades = []
+for student in students:
+    if student['course'] == 'web development':
+        web_development_grades.append(sum(student['grades']) / len(student['grades']))
+    elif student['course'] == 'data science':
+        data_science_grades.append(sum(student['grades']) / len(student['grades']))
+print(sum(web_development_grades) / len(web_development_grades))
+print(sum(data_science_grades) / len(data_science_grades))
+
 # What is the average grade range (i.e. highest grade - lowest grade) for dark coffee drinkers?
 
+grades = []
+for student in students:
+    if student['coffee_preference'] == 'dark':
+        grades.append(max(student['grades']) - min(student['grades']))
+print(sum(grades) / len(grades))
 
 
 # What is the average number of pets for medium coffee drinkers?
