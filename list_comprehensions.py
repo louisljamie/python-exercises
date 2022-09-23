@@ -1,3 +1,4 @@
+# list_comp
 # 17 list comprehension problems in python
 
 fruits = ['mango', 'kiwi', 'strawberry', 'guava', 'pineapple', 'mandarin orange']
@@ -14,11 +15,13 @@ for number in numbers:
 
 numbers_plus_one = [number + 1 for number in numbers]
 
+
 # Example code that creates a list of all of the list of strings in fruits and uppercases every string
 output = []
 for fruit in fruits:
     output.append(fruit.upper())
-    
+
+
 # Exercise 1 - rewrite the above example code using list comprehension syntax. Make a variable named uppercased_fruits to hold the output of the list comprehension. Output should be ['MANGO', 'KIWI', etc...]
 
 uppercased_fruits = [fruit.upper() for fruit in fruits]
